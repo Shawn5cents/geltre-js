@@ -1,0 +1,37 @@
+{
+  "name": "@nichols-ai/geltre",
+  "version": "0.1.0",
+  "description": "Official TypeScript/JavaScript client SDK for Geltre by Nichols AI",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "check": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["geltre", "nichols-ai", "orienting-model", "ai"],
+  "author": "Nichols AI",
+  "license": "MIT",
+  "homepage": "https://nicholsai.com/#geltre",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shawn5cents/geltre-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shawn5cents/geltre-js/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
