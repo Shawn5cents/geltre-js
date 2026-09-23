@@ -160,7 +160,7 @@ export class Geltre {
       response = await this.fetchImpl(this.baseUrl + path, {
         method,
         headers,
-        body: serialized,
+        body: serialized ?? null,
       });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
